@@ -1,0 +1,50 @@
+h1, h2, h4, p, a{
+    font-family: 'Alfa Slab One';
+    color: #262261;
+}
+.menuSuperior{
+    margin: 0;
+    padding: 0;
+}
+
+.menuSuperior nav{
+    list-style: none;
+    margin: 10px;
+    display: inline;
+    float: right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 33px;
+
+}
+
+.menuSuperior nav a{
+    padding: 5px 10px;
+    margin: 0;
+
+    text-decoration: none;
+}
+.menuSuperior nav a:hover{
+    background: #C4C4C4;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+footer{
+    text-align: center;
+}
+
+.infLocal{
+    padding: 60px; 
+    background-color: #262261;
+}
+.infLocal p{
+    font-size: medium;
+    color: white;
+    font-size: 20px;
+    
+}
+.infCriador {
+    padding: 30px;
+}

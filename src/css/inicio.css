@@ -1,0 +1,18 @@
+.itemUm{
+    padding: 150px;
+}
+.itemUm a{
+text-decoration: none;
+padding: 10px;
+border-radius: 5px;
+background-color: #262261;
+color: white;
+
+margin-top: 50px;
+}
+.itemUm h4{
+margin-bottom: 150px;
+}
+.itemUm h1{
+
+}

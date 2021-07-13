@@ -1,0 +1,16 @@
+table {
+    text-align: center;
+    
+    
+}
+
+td {
+    padding: 60px;
+}
+
+td:hover{
+    background: #C4C4C4;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
