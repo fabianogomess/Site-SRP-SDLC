@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRP</title>
+
+    <style>
+        h1, h2, p, a{
+            font-family: Alfa Slab One;
+            color: #262261;
+        }
+        .menuSuperior{
+            margin: 0;
+            padding: 0;
+        }
+    
+        .menuSuperior nav{
+            list-style: none;
+            margin: 10px;
+            display: inline;
+            float: right;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 33px;
+
+
+
+        }
+
+        .menuSuperior nav a{
+            padding: 5px 10px;
+            margin: 0;
+
+            text-decoration: none;
+        }
+        .menuSuperior nav a:hover{
+            background: #C4C4C4;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+                border-radius:5px;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="menuSuperior">
+        <img src="../img/logo(0.5).png" alt="Logo da srp@sdlc" 
+        title="Logo do projeto SRP@SDLC">
+        <nav>
+            <a href="inicio.html">HOME</a>
+            <a href="sobre.html">ABOUT</a>
+            <a href="pessoas.html">MEMBERS</a>
+            <a href="publicacoes.html">PUBLICATIONS</a>
+            <a href="contato.html">CONTACT</a>
+            
+        </nav>
+        
+    </header>
+    <hr>
+    
+    <section id="conteudo"> 
+
+    </section>
+
+    <hr>
+    <footer>
+        <div id="infLocal">
+            <img src="../img/logo(0.75x).png" alt="Logo da srp@sdlc" title="Logo do projeto SRP@SDLC">
+            <p> Universidade Federal de Goiás ( UFG ) <br>
+                Instituto de Informática ( INF ) <br>
+                Goiânia - GO <br>
+                Brasil</p>
+        </div>
+        <div od= "infCriador">
+            <p>Made By: Fabiano Gomes</p>
+        </div>
+
+    </footer>
+
+    <script>
+        document.querySelectorAll('a').forEach(link =>{
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e) {
+                e.preventDefault()
+                fetch(link.href) //requisição ajaz para pegar o link
+                    .then(resp => resp.text())
+                    .then (html => conteudo.innerHTML = html) //colocando o conteudo na section
+            }
+        })
+    </script>
+
+</body>
+</html>
+
