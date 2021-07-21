@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/inicio.css">
     <link rel="stylesheet" href="../css/pessoas.css">
-
+    <link rel="stylesheet" href="../css/sobre.css">
+    
     <title>SRP@SDLC</title>
 
 </head>
@@ -20,7 +21,7 @@
         <img src="../img/logo(0.5).png" alt="Logo da srp@sdlc" 
         title="Logo do projeto SRP@SDLC">
         <nav>
-            <a href="inicio.html">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="sobre.html">ABOUT</a>
             <a href="pessoas.html">MEMBERS</a>
             <a href="publicacoes.html">PUBLICATIONS</a>
@@ -31,8 +32,41 @@
     </header>
     <hr>
     
-    <section id="conteudo"> 
-
+    <section id= "conteudo" >
+        <div class="carousel">
+          <div data-js="carousel__item" class="carousel__item carousel__item--visible">
+            <h1>Welcome to Software Requirement Patterns and the 
+                Software Development Life Cycle </h1>
+            <h4>
+                This project aims to study and develop software requirements patterns, 
+                which can help in the development of your projects, through the Dream 
+                tool.
+            </h4>
+        
+            <a href="sobre.html">View More</a>
+        </div>
+        <div data-js="carousel__item" class="carousel__item">
+            <h1>Meet the members who are part of the SRP@SDLC project.</h1>
+            <h4>
+    
+            </h4>
+            <a href="pessoas.html">View More</a>
+        </div>
+        <div data-js="carousel__item" class="carousel__item">
+            <h1>For more information about the project, please contact us.</h1>
+    
+            <a href="contato.html">View More</a>
+        </div> 
+        
+        <div class="carousel__actions">
+            <button data-js="carousel__button--prev" aria-label="Slide anterior">
+              <
+            </button>
+      
+            <button data-js="carousel__button--next" aria-label="Próximo slide">
+              >
+            </button>
+        </div>
     </section>
 
     <hr>
@@ -50,18 +84,8 @@
 
     </footer>
 
-    <script>
-        document.querySelectorAll('a').forEach(link =>{
-            const conteudo = document.getElementById('conteudo')
-
-            link.onclick = function(e) {
-                e.preventDefault()
-                fetch(link.href) //requisição ajaz para pegar o link
-                    .then(resp => resp.text())
-                    .then (html => conteudo.innerHTML = html) //colocando o conteudo na section
-            }
-        })
-    </script>
+    <script src="../script/index.js"></script>
+    <script src="../script/pessoa.js"></script>
 
 </body>
 </html>

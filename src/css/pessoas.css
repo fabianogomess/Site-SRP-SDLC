@@ -1,11 +1,13 @@
 table {
     text-align: center;
+    width: 100%;
+    border: 2 black;
     
     
 }
 
 td {
-    padding: 60px;
+    border: 2px;
 }
 
 td:hover{
