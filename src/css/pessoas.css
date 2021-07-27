@@ -4,7 +4,7 @@
     margin: 25px;
     margin-left: 25px;
     
-}*/
+}
 table {
     text-align: center;
     width: 100%;
@@ -21,21 +21,47 @@ td:hover{
     -moz-border-radius:5px;
     border-radius:5px;
 }
-img {
+table img {
     margin-top: 20px;
-    
 }
-
 .tituloPessoa {
-    display: inline;
-    
+    margin: 25px;
 }
-
-
+.tituloPessoa h2, h3 {
+    display: inline; 
+    vertical-align: middle;
+}
+.tituloPessoa h2{
+    color: #262261;
+}
 .conteudoPessoa{
  display: flex;
  flex-flow: row wrap;
+ margin-left: 50px;
+ margin-bottom: 100px;
 }
-.conteudoPessoa .coluna{
-    width: 50%;
+.coluna1{
+    margin-top: 25px;
+}
+.coluna2 {
+    margin-left: 20px;
+    color: #262261;
+    font-weight: bold;
+}
+.info01 p, img{
+    display: inline;
+    color: black;
+    font-weight: normal;
+
+    vertical-align: middle;
+}
+.info02 p, img{
+    display: inline;
+    color: black;
+    font-weight: normal;
+}
+.info03 p, img{
+    display: inline;
+    color: black;
+    font-weight: normal;
 }

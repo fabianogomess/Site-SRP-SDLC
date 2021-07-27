@@ -1,94 +1,94 @@
 //lista de membros do projeto 
 const renato_bulcao = {
-    nome: "Prof. Renato Bulcao",
+    nome: "Mr. Renato Bulcao",
     imagem: "../img/Group 4 (1).png",
-    graducao: "Computer Science (UFMA)",
+    graduacao: "Computer Science (UFMA)",
     posGraduacao: "Computer Science and Computational Mathematics (USP)",
     doutorado: "Computer Science and Computational Mathematics (USP)"
 }
 const taciana_novo = {
-    nome:"Prof. Taciana Novo Kudo",
+    nome:"Ms. Taciana Novo Kudo",
     imagem: "../img/Group 4 (1).png",
-    graducao: "Computer Science (UNIMAR)",
+    graduacao: "Computer Science (UNIMAR)",
     posGraduacao: "Computer Science (UFSCAR)",
     doutorado: "Computer Science (UFSCAR)"
 }
 const valdemar_vicente = {
-    nome: "Prof. Valdemar Vicente Graciano Neto",
+    nome: "Mr. Valdemar Vicente Graciano Neto",
     imagem:"../img/Group 4 (1).png",
-    graduação:"Computer Science (UFG)",
+    graduacao:"Computer Science (UFG)",
     posGraduacao:"Computer Science (UFG)",
-    doltorado:"Computer Science and Computational Mathematics (USP)"
+    doutorado:"Computer Science and Computational Mathematics (USP)"
 }
 const auri_marcelo = {
-    nome:"Prof. Auri Marcelo Rizzo Vincenzi",
+    nome:"Mr. Auri Marcelo Rizzo Vincenzi",
     imagem:"../img/Group 4 (1).png",
-    graduação:"Computer Science (UEL)",
+    graduacao:"Computer Science (UEL)",
     posGraduacao:"Computer Science and Computational Mathematics (USP)",
-    doltorado:"Computer Science and Computational Mathematics (USP)"
+    doutorado:"Computer Science and Computational Mathematics (USP)"
 }
 const pollyana_queiroz = {
     nome:"Prof. Pollyana de Queiroz Ribeiro",
     imagem:"../img/Group 4 (1).png",
-    graduação:"Information Systems (UEG), Pedagogy (UNOPAR)",
+    graduacao:"Information Systems (UEG), Pedagogy (UNOPAR)",
     posGraduacao:"Computer Science (UFG)",
-    doltorado:""
+    doutorado:""
 }
 const ernesto_fonseca = {
     nome:"Ernesto Fonseca Veiga",
     imagem:"../img/Group 4 (1).png",
-    graduação:"",
+    graduacao:"",
     posGraduacao:"",
-    doltorado:""
+    doutorado:""
 }
 const mariana_crisostomo = {
     nome:"Mariana Crisóstomo Martins",
     imagem:"../img/Group 4 (1).png",
-    graduação:"",
+    graduacao:"",
     posGraduacao:"",
-    doltorado:""
+    doutorado:""
 }
 const cinara_gomes = {
     nome:"Cinara Gomes de Melo Carneiro",
     imagem:"../img/Group 4 (1).png",
-    graduação:"",
+    graduacao:"",
     posGraduacao:"",
-    doltorado:""
+    doutorado:""
 }
 const matheus_ribeiro = {
     nome:"Matheus Ribeiro Pimenta Nunes",
     imagem:"../img/Group 4 (1).png",
-    graduação:"",
+    graduacao:"",
     posGraduacao:"",
-    doltorado:""
+    dutorado:""
 }
 const thalia_santos = {
     nome:"Thalia Santos de Santana",
     imagem:"../img/Group 4 (1).png",
-    graduação:"",
+    graduacao:"",
     posGraduacao:"",
-    doltorado:""
+    doutorado:""
 }
 const andres_zuin = {
     nome:"Andrês Zuin Alegria",
     imagem:"../img/Group 4 (1).png",
-    graduação:"",
+    graduacao:"",
     posGraduacao:"",
-    doltorado:""
+    doutorado:""
 }
 const pablo_henrique = {
     nome:"Pablo Henrique Aguiar Cavalcante",
     imagem:"../img/Group 4 (1).png",
-    graduação:"Software Engineering (UFG)",
+    graduacao:"Software Engineering (UFG)",
     posGraduacao:"",
-    doltorado:""
+    doutorado:""
 }
 const fabiano_gomes = {
     nome:"Fabiano Gomes Pires",
     imagem:"../img/Group 4 (1).png",
-    graduação:"Software Engineering (UFG)",
+    graduacao:"Software Engineering (UFG)",
     posGraduacao:"",
-    doltorado:""
+    doutorado:""
 }
 
 //conjunto de pessoas que fazem parte do projeto
@@ -115,23 +115,37 @@ function procurarPessoa(pessoa){
     
 
     <div class = "tituloPessoa">
-        <h2 class="clickable" onclick="mostrarPessoas()">MEMBERS</h2><h2>></h2>
+        <h2 class="clickable" onclick="mostrarPessoas()">MEMBERS</h2>
+        <img src="../img/ic_round-navigate-next.png" alt="sinal de maior-que">
         <h3>${pessoas[pessoa].nome}</h3>
     </div>
 
     <div class = "conteudoPessoa">
-        <div class= "coluna">
+        <div class= "coluna1">
         <img src="${pessoas[pessoa].imagem}" alt="img de perfil da pessoa">
         </div>
 
-        <div class = "coluna">
+        <div class = "coluna2">
             <h4>CAREER SUMMARY</h4>
+            
             <p>Graduation</p>
-            <img src="..//img/seta.png" alt="seta"> <p>${pessoas[pessoa].graducao}</p>
+            <div class = "info01">
+                <img src="..//img/seta.png" alt="seta">  
+                <p>${pessoas[pessoa].graduacao}</p>
+            </div>
+            
             <p>MSc</p>
-            <img src="..//img/seta.png" alt="seta"> <p>${pessoas[pessoa].posGraduacao}</p>
+            <div class = "info02">
+                <img src="..//img/seta.png" alt="seta"> 
+                <p>${pessoas[pessoa].posGraduacao}</p>
+            </div>
+            
+            
             <p>Phd</p>
-            <img src="..//img/seta.png" alt="seta"> <p>${pessoas[pessoa].doutorado}</p>
+            <div class = "info03">
+                <img src="..//img/seta.png" alt="seta" > 
+                <p>${pessoas[pessoa].doutorado}</p>
+            </div>
         </div>
     </div>
 
