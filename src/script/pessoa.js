@@ -112,16 +112,19 @@ const pessoas = {
 //função responsavel por receber uma pessoa e mostrar a pagina pessoal dela con as informações 
 function procurarPessoa(pessoa){
     const innerHtml = `
+    
 
-    <div>
-        <h2 class="clickable" onclick="mostrarPessoas()">Membros</h2><h2>></h2>
+    <div class = "tituloPessoa">
+        <h2 class="clickable" onclick="mostrarPessoas()">MEMBERS</h2><h2>></h2>
         <h3>${pessoas[pessoa].nome}</h3>
     </div>
 
-    <div>
+    <div class = "conteudoPessoa">
+        <div class= "coluna">
         <img src="${pessoas[pessoa].imagem}" alt="img de perfil da pessoa">
+        </div>
 
-        <div>
+        <div class = "coluna">
             <h4>CAREER SUMMARY</h4>
             <p>Graduation</p>
             <img src="..//img/seta.png" alt="seta"> <p>${pessoas[pessoa].graducao}</p>

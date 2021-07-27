@@ -1,0 +1,8 @@
+section .contato h2{
+    color: #262261;
+    margin: 25px;
+}
+.contato p {
+    margin: 25px 25px 100px 25px;
+    text-align: center;
+}

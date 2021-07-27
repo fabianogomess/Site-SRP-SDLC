@@ -1,18 +1,41 @@
+.tituloMembro{
+    display: flex;
+    color: #262261;
+    margin: 25px;
+    margin-left: 25px;
+    
+}*/
 table {
     text-align: center;
     width: 100%;
-    border: 2 black;
+    
+    margin-bottom: 100px;
+    table-layout: fixed;
+    border-spacing: 20px;
     
     
 }
-
-td {
-    border: 2px;
-}
-
 td:hover{
     background: #C4C4C4;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
+}
+img {
+    margin-top: 20px;
+    
+}
+
+.tituloPessoa {
+    display: inline;
+    
+}
+
+
+.conteudoPessoa{
+ display: flex;
+ flex-flow: row wrap;
+}
+.conteudoPessoa .coluna{
+    width: 50%;
 }

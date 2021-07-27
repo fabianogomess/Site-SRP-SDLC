@@ -1,13 +1,34 @@
-
-h1, h2, h4, p, a{
-    font-family: '';
-    
+body{
+  margin: 20px;
+  font-family: 'Noto Sans', sans-serif;
 }
-.menuSuperior{
-    margin: 0;
-    padding: 0;
+.menuSuperior img{
+  margin-top: auto;
+  margin-bottom: auto;
 }
+.menuSuperior nav a{
+  margin-right: 25px;
+  color: #262261;
+  font-weight: bold;
 
+  text-decoration: none;
+}
+.menuSuperior nav a:hover{
+    padding: 5px;
+    background: #C4C4C4;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.menuSuperior nav .destaque {
+  color: white;
+  background-color: #262261;
+  padding: 5px;
+  border-radius: 5px;
+}
+hr {
+  border: 1px solid #262261;
+}
 .menuSuperior nav{
     list-style: none;
     margin: 10px;
@@ -19,19 +40,56 @@ h1, h2, h4, p, a{
     line-height: 33px;
 
 }
-
-.menuSuperior nav a{
-    padding: 5px 10px;
-    margin: 0;
-
-    text-decoration: none;
+.carousel  {
+  
+  margin: 10px 25px 20px 25px;
+  
 }
-.menuSuperior nav a:hover{
-    background: #C4C4C4;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
+.carousel .carousel__item a {
+  text-decoration: none;
+  background-color: #262261;
+  font-size: 18px;
+  color: white;
+  padding: 15px;
+  border-radius:5px;
+  margin-top: 20px;
+ 
 }
+.carousel .carousel__item h1{
+  color: #262261;
+}
+.carousel .carousel__item p{
+  border: 2px solid #262261;
+  padding: 50px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+.carousel .carousel__actions {
+  margin-top: 50px;
+  align-items: left;
+}
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+}
+
+ .carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+  }
+  .carousel .carousel__actions button {
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 25px;
+    height: 24px;
+    color: #FFF;
+    background-color: #C4C4C4;
+    margin-right: 5px;
+  }
+
 footer{
     text-align: center;
 }
@@ -43,7 +101,7 @@ footer{
 .infLocal p{
     font-size: medium;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     
 }
 .infCriador {
@@ -51,68 +109,11 @@ footer{
 }
 
 .clickable:hover{
-    cursor: pointer;
+  cursor: pointer;
 }
+  
 
- .carousel {
-    overflow: hidden;
-    max-width: 1500px;
-    position: relative;
-}
   
- .carousel .carousel__item,
-.carousel .carousel__item--hidden {
-    display: none;
-}
   
- .carousel .carousel__item img {
-    width: 50%;
-    max-width: 100%;
-    height: auto;
-}
-  
- .carousel .carousel__item--visible {
-    display: block;
-    animation: fadeVisibility 0.5s;
-  }
-  
-   .carousel .carousel__actions {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-   .carousel .carousel__actions button {
-    border-radius: 50px;
-    border: 0;
-    font-weight: bold;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    color: #FFF;
-    background-color: #242424;
-  }
-  
-  .carousel .carousel__actions button[data-js="carousel__button--prev"] {
-    margin-left: 20px;
-  }
-  
-  .carousel .carousel__actions button[data-js="carousel__button--next"] {
-    margin-right: 20px;
-  }
-  
-  @keyframes fadeVisibility {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      transform: opacity linear;
-    }
-  }
-
 
   

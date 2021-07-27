@@ -1,15 +1,3 @@
-//função que exibe o conteudo dos menus superiores entre as duas linhas do index
-/*
-document.querySelectorAll('a').forEach(link =>{
-    const conteudo = document.getElementById('conteudo')
-
-    link.onclick = function(e) {
-        e.preventDefault()
-        fetch(link.href) //requisição ajaz para pegar o link
-            .then(resp => resp.text())
-            .then (html => conteudo.innerHTML = html) //colocando o conteudo na section
-    }
-})*/
 
 function mostrarPessoas(){
     const innerHtml = `
@@ -113,7 +101,6 @@ function mostrarPessoas(){
 }
 
 
-
 const slides = document.querySelectorAll('[data-js="carousel__item"]')
 const nextButton = document.querySelector('[data-js="carousel__button--next"]')
 const prevButton = document.querySelector('[data-js="carousel__button--prev"]')
@@ -150,3 +137,8 @@ prevButton.addEventListener ('click', () => {
    slides[contadorSlides].classList.add('carousel__item--visible')
 
 })
+
+
+
+
+  
