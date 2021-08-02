@@ -1,81 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
 
+
+    <link rel="stylesheet" href="../../lib/owlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../lib/owlCarousel2/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/inicio.css">
-    <link rel="stylesheet" href="../css/pessoas.css">
-    <link rel="stylesheet" href="../css/sobre.css">
-    
+
     <title>SRP@SDLC</title>
 
 </head>
+
 <body>
     <header class="menuSuperior">
-        <img src="../img/logo(0.5).png" alt="Logo da srp@sdlc" 
-        title="Logo do projeto SRP@SDLC">
-        <nav >
-            <a href="index.html"  class="destaque">HOME</a>
+        <img src="../img/logo(0.5).png" alt="Logo da srp@sdlc" title="Logo do projeto SRP@SDLC">
+        <nav>
+            <a href="index.html" class="destaque">HOME</a>
             <a href="sobre.html">ABOUT</a>
-            <a href="pessoas.html">MEMBERS</a>
+            <a href="membros.html">MEMBERS</a>
             <a href="publicacoes.html">PUBLICATIONS</a>
             <a href="contato.html">CONTACT</a>
-            
+
         </nav>
         <hr>
     </header>
-   
-    
-    <section id= "conteudo" >
-        <div class="carousel">
-            <div data-js="carousel__item" class="carousel__item carousel__item--visible">
-                <h1>Welcome to Software Requirement Patterns and the 
+
+
+    <section id="conteudo">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <h1>Welcome to Software Requirement Patterns and the
                     Software Development Life Cycle </h1>
                 <p>
-                    This project aims to study and develop software requirements patterns, 
-                    which can help in the development of your projects, through the Dream 
+                    This project aims to study and develop software requirements patterns,
+                    which can help in the development of your projects, through the Dream
                     tool.
                 </p>
-        
-                 <a href="sobre.html">View More</a>
+
+                <a href="sobre.html">View More</a>
             </div>
-            <div data-js="carousel__item" class="carousel__item">
+
+            <div class="item">
                 <h1>Meet the members who are part of the SRP@SDLC project.</h1>
-                    <p>
-                        Mr. Renato Bulcão Neto, Ms. Taciana Novo Kudo, Mr. Valdemar Vicente Graciano Neto,
-                        Mr. Auri Marcelo Rizzo Vincenzi and more. 
-                    </p>
-                    
-                <a href="pessoas.html">View More</a>
+
+                <div class="itemLista">
+                    <ul>
+                        <li>Mr. Renato Bulcão Neto</li>
+                        <li>Ms. Taciana Novo Kudo</li>
+                        <li>Mr. Valdemar Vicente Graciano Neto</li>
+                        <li>And more...</li>
+                    </ul>
+                </div>
+
+                <a href="membros.html">View More</a>
             </div>
-            <div data-js="carousel__item" class="carousel__item">
+
+            <div class="item">
                 <h1>For more information about the project, please contact us.</h1>
                 <p>
-                    When you have any doubts or specific interest about any aspect of the 
+                    When you have any doubts or specific interest about any aspect of the
                     project that you haven't found here, find out how to get in touch with us.
                 </p>
                 <a href="contato.html">View More</a>
-            </div> 
-
-            <div class="carousel__actions">
-                <button data-js="carousel__button--prev" aria-label="Slide anterior">
-                    <
-                </button>
-      
-                <button data-js="carousel__button--next" aria-label="Próximo slide">
-                    >
-                </button>
             </div>
+
         </div>
 
     </section>
@@ -83,10 +80,10 @@
     <footer>
         <div class="infLocal">
             <img src="../img/logo(0.75x).png" alt="Logo da srp@sdlc" title="Logo do projeto SRP@SDLC">
-            <p> Universidade Federal de Goiás ( UFG ) <br>
-                Instituto de Informática ( INF ) <br>
-                Goiânia - GO <br>
-                Brasil</p>
+            <p>Universidade Federal de Goiás ( UFG )</p>
+            <p>Instituto de Informática ( INF )</p>
+            <p>Goiânia - GO </p>
+            <p>Brasil</p>
         </div>
         <div class="infCriador">
             <p>Made By: Fabiano Gomes</p>
@@ -94,9 +91,13 @@
 
     </footer>
 
+
+
+    <script src="../../lib/jQuery/jQuery.mim.js"></script>
+    <script src="../../lib/owlCarousel2/dist/owl.carousel.min.js"></script>
+
     <script src="../script/index.js"></script>
-    <script src="../script/pessoa.js"></script>
 
-    </body>
-    </html>
+</body>
 
+</html>

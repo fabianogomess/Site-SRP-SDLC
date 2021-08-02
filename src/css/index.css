@@ -2,6 +2,7 @@ body{
   margin: 20px;
   font-family: 'Noto Sans', sans-serif;
 }
+
 .menuSuperior img{
   margin-top: auto;
   margin-bottom: auto;
@@ -40,12 +41,11 @@ hr {
     line-height: 33px;
 
 }
-.carousel  {
-  
-  margin: 10px 25px 20px 25px;
+.item{
+  margin: 100px 25px 25px 25px;
   
 }
-.carousel .carousel__item a {
+.item a {
   text-decoration: none;
   background-color: #262261;
   font-size: 18px;
@@ -55,57 +55,59 @@ hr {
   margin-top: 20px;
  
 }
-.carousel .carousel__item h1{
+.item h1{
   color: #262261;
 }
-.carousel .carousel__item p{
+.item p {
   border: 2px solid #262261;
   padding: 50px;
   border-radius: 5px;
   margin-bottom: 40px;
   font-weight: normal;
 }
-.carousel .carousel__actions {
-  margin-top: 50px;
-  align-items: left;
+.itemLista {
+  border: 2px solid #262261;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  font-weight: normal;
 }
-.carousel .carousel__item,
-.carousel .carousel__item--hidden {
-    display: none;
+ul {
+  text-align: justify;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
- .carousel .carousel__item--visible {
-    display: block;
-    animation: fadeVisibility 0.5s;
-  }
-  .carousel .carousel__actions button {
-    border-radius: 5px;
-    border: 0;
-    font-weight: bold;
-    cursor: pointer;
-    width: 25px;
-    height: 24px;
-    color: #FFF;
-    background-color: #C4C4C4;
-    margin-right: 5px;
-  }
-
+.itemLista li{
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+.owl-theme .owl-nav.disabled+.owl-dots{
+  margin-bottom: 100px;
+  
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #262261;
+}
 footer{
     text-align: center;
 }
-
 .infLocal{
-    padding: 60px; 
+    padding: 40px; 
     background-color: #262261;
 }
 .infLocal p{
     font-size: medium;
     color: white;
     font-size: 18px;
-    
+    margin: 0;
+}
+.infLocal img{
+  margin-bottom: 10px;
 }
 .infCriador {
     padding: 30px;
+    font-size: small;
 }
 
 .clickable:hover{
