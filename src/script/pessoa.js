@@ -3,16 +3,18 @@ const renato_bulcao = {
     nome: "Mr. Renato Bulcão",
     imagem: "../img/Group 4 (1).png",
     graduacao: "Computer Science (UFMA)",
-    especializacao:"MIgezendo",
+    especializacao:"",
     posGraduacao: "Computer Science and Computational Mathematics (USP)",
-    doutorado: "Computer Science and Computational Mathematics (USP)"
+    doutorado: "Computer Science and Computational Mathematics (USP)",
+    lattes: "http://lattes.cnpq.br/7044035224784132"
 }
 const taciana_novo = {
     nome:"Ms. Taciana Novo Kudo",
     imagem: "../img/Group 4 (1).png",
     graduacao: "Computer Science (UNIMAR)",
     posGraduacao: "Computer Science (UFSCAR)",
-    doutorado: "Computer Science (UFSCAR)"
+    doutorado: "Computer Science (UFSCAR)",
+    lattes: "http://lattes.cnpq.br/7044035224784132"
 }
 const valdemar_vicente = {
     nome: "Mr. Valdemar Vicente Graciano Neto",
@@ -121,17 +123,50 @@ function procurarPessoa(){
     let especializacao = "";
     if (pessoas[pessoa].especializacao){
         especializacao = `
-        <p>Especialization</p>
+            <p>Especialization</p>
             <div class = "info01">
                 <img src="..//img/seta.png" alt="seta">  
                 <p>${pessoas[pessoa].especializacao}</p>
             </div>   
-        
         `
     }
+
+    let lattes = "";
+    if (pessoas[pessoa].lattes){
+        lattes = `
+            <p>Lattes</p>
+            <div class = "info04">
+                <img src="..//img/seta.png" alt="seta" > 
+                <a href = "${pessoas[pessoa].lattes}">Plataforma Lattes - ${pessoas[pessoa].nome}</a>
+            </div>      
+         `
+    }
+
+    let posGraduacao = "";
+    if (pessoas[pessoa].lattes){
+        posGraduacao = `
+            <p>MSc</p>
+            <div class = "info02">
+                <img src="..//img/seta.png" alt="seta"> 
+                <p>${pessoas[pessoa].posGraduacao}</p>
+            </div>  
+        `
+    }
+
+    let doutorado = "";
+    if (pessoas[pessoa].doutorado){
+        doutorado = `
+            <p>Phd</p>
+            <div class = "info03">
+                <img src="..//img/seta.png" alt="seta" > 
+                <p>${pessoas[pessoa].doutorado}</p>
+            </div> 
+        `
+    }
+
     const innerHtml = `
         <div class = "tituloPessoa">
-            <h2><a id = "ancora" href="pessoas.html">MEMBERS</a></h2>
+            <h2><a id = "ancora" href="membros.html">MEMBERS</a></h2>
             <img src="../img/ic_round-navigate-next.png" alt="sinal de maior-que">
             <h3>${pessoas[pessoa].nome}</h3>
         </div>
@@ -152,20 +187,13 @@ function procurarPessoa(){
                 
                 ${especializacao}
 
-                <p>MSc</p>
-                <div class = "info02">
-                    <img src="..//img/seta.png" alt="seta"> 
-                    <p>${pessoas[pessoa].posGraduacao}</p>
-                </div>
+                ${posGraduacao}
                 
-                <p>Phd</p>
-                <div class = "info03">
-                    <img src="..//img/seta.png" alt="seta" > 
-                    <p>${pessoas[pessoa].doutorado}</p>
-                </div>
+                ${doutorado} 
+                
+                ${lattes}
             </div>
         </div>
-
 
     `
     const conteudoHtml = document.getElementById('conteudo')

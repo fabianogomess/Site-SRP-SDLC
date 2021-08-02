@@ -1,30 +1,6 @@
-.tituloMembro{
-    display: flex;
-    color: #262261;
-    margin: 25px;
-    margin-left: 25px;
-    
-}
-table {
-    text-align: center;
-    width: 100%;
-    
-    margin-bottom: 100px;
-    table-layout: fixed;
-    border-spacing: 20px; 
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-td:hover{
-    background: #C4C4C4;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-}
-table img {
-    margin-top: 20px;
+.menuSuperior img{
+    margin-top: auto;
+    margin-bottom: 5px;
 }
 .tituloPessoa {
     margin: 25px;
@@ -33,21 +9,22 @@ table img {
     display: inline; 
     vertical-align: middle;
 }
-.tituloPessoa h2{
+.tituloPessoa h2 a{
+    text-decoration: none;
     color: #262261;
 }
 .conteudoPessoa{
  display: flex;
  flex-flow: row wrap;
  margin-left: 50px;
- margin-bottom: 100px;
+ margin-bottom: 200px;
 }
 .coluna1{
     margin-top: 25px;
 }
 .coluna2 {
     margin-left: 20px;
-    color: #262261;
+    color: #262261 !important;
     font-weight: bold;
 }
 .info01 p, img{
@@ -63,6 +40,12 @@ table img {
     font-weight: normal;
 }
 .info03 p, img{
+    display: inline;
+    color: black;
+    font-weight: normal;
+}
+
+.info04 a {
     display: inline;
     color: black;
     font-weight: normal;

@@ -1,0 +1,30 @@
+.tituloMembro{
+    display: flex;
+    color: #262261;
+    margin: 25px;
+    margin-left: 25px;
+    
+}
+table {
+    text-align: center;
+    width: 100%;
+    
+    margin-bottom: 100px;
+    table-layout: fixed;
+    border-spacing: 20px; 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+td:hover{
+    background: #C4C4C4;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+table img {
+    margin-top: 20px;
+}
+
+
