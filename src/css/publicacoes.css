@@ -4,11 +4,11 @@
 }
 .publicacoes h2 {
     margin: 25px;
-    color: #262261;
+    color: #005BBB;
 }
 .publicacoes h3 {
     margin: 25px;
-    color: #262261;
+    color: #005BBB;
 }
 li {
     margin-bottom: 20px;
@@ -17,5 +17,5 @@ li {
 li a{
     text-decoration: none;
     font-weight:bold;
-    color: #262261;
+    color: black;
 }

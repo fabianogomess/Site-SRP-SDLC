@@ -172,7 +172,7 @@ function procurarPessoa(){
             <p>Lattes</p>
             <div class = "info04">
                 <img src="..//img/seta.png" alt="seta" > 
-                <a href = "${pessoas[pessoa].lattes}">Lattes Platform - ${pessoas[pessoa].nome}</a>
+                <a href = "${pessoas[pessoa].lattes}" target="_blank">Lattes Platform - ${pessoas[pessoa].nome}</a>
             </div>      
          `
     }

@@ -9,7 +9,7 @@ body{
 }
 .menuSuperior nav a{
   margin-right: 25px;
-  color: #262261;
+  color: #005BBB;
   font-weight: bold;
 
   text-decoration: none;
@@ -23,12 +23,12 @@ body{
 }
 .menuSuperior nav .destaque {
   color: white;
-  background-color: #262261;
+  background-color: #005BBB;
   padding: 5px;
   border-radius: 5px;
 }
 hr {
-  border: 1px solid #262261;
+  border: 1px solid #005BBB;
 }
 .menuSuperior nav{
     list-style: none;
@@ -41,13 +41,15 @@ hr {
     line-height: 33px;
 
 }
+
 .item{
+ 
   margin: 100px 25px 25px 25px;
   
 }
 .item a {
   text-decoration: none;
-  background-color: #262261;
+  background-color: #FFD500;
   font-size: 18px;
   color: white;
   padding: 15px;
@@ -56,17 +58,17 @@ hr {
  
 }
 .item h1{
-  color: #262261;
+  color: #005BBB;
 }
 .item p {
-  border: 2px solid #262261;
+  border: 2px solid #005BBB;
   padding: 50px;
   border-radius: 5px;
   margin-bottom: 40px;
   font-weight: normal;
 }
 .itemLista {
-  border: 2px solid #262261;
+  border: 2px solid #005BBB;
   border-radius: 5px;
   margin-bottom: 40px;
   font-weight: normal;
@@ -87,14 +89,14 @@ ul {
 }
 .owl-theme .owl-dots .owl-dot.active span, 
 .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #262261;
+  background-color: #FFD500;
 }
 footer{
     text-align: center;
 }
 .infLocal{
     padding: 40px; 
-    background-color: #262261;
+    background-color: #005BBB;
 }
 .infLocal p{
     font-size: medium;
