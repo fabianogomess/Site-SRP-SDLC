@@ -1,0 +1,21 @@
+.produtos{
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+.produtos h2 {
+    margin: 25px;
+    color: #005BBB;
+}
+
+li {
+    margin: 25px;
+    color: #005BBB;
+    font-weight: bold;
+    margin-left: 50px;
+}
+li p{
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-weight: normal;
+    color: black;
+}

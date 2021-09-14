@@ -39,9 +39,13 @@ hr {
     font-weight: normal;
     font-size: 18px;
     line-height: 33px;
-
 }
-
+.owl-carousel {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  margin-bottom: 60px;
+}
 .item{
  
   margin: 100px 25px 25px 25px;
@@ -83,13 +87,10 @@ ul {
   margin-left: 50px;
   margin-bottom: 5px;
 }
-.owl-theme .owl-nav.disabled+.owl-dots{
-  margin-bottom: 100px;
-  
-}
 .owl-theme .owl-dots .owl-dot.active span, 
 .owl-theme .owl-dots .owl-dot:hover span {
   background-color: #FFD500;
+  
 }
 footer{
     text-align: center;
