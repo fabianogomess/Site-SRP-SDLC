@@ -1,6 +1,6 @@
 .tituloMembro{
     display: flex;
-    color: #005BBB;
+    color: #262261;
     margin: 25px;
     margin-left: 25px;
     
@@ -30,7 +30,7 @@ table img {
     max-height:150px;
    
     border-radius: 5px;
-    border: 3px solid #005BBB;
+    border: 3px solid #262261;
 }
 
 

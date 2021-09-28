@@ -11,7 +11,7 @@
 }
 .tituloPessoa h2 a{
     text-decoration: none;
-    color: #005BBB;
+    color: #262261;
 }
 .conteudoPessoa{
  display: flex;
@@ -28,11 +28,11 @@
     width: auto;
     height: auto;
     border-radius: 5px;
-    border: 3px solid #005BBB;
+    border: 3px solid #262261;
 }
 .coluna2 {
     margin-left: 20px;
-    color: #005BBB !important;
+    color: #262261 !important;
     font-weight: bold;
 }
 .coluna2 h4 {
